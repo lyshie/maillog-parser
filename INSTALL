@@ -1,0 +1,23 @@
+[ Logger for IMAP-POP3 ]
+
+1. Essential packages
+   # perl -MCPAN -e shell
+   cpan> install PKG_NAME 
+
+   * lib, FindBin, Exporter
+   * CGI, Net::POP3, Unicode::IMAPUtf7
+
+2. Hierarchical directory 
+   /logpool/HOSTS/s92/2007/10/23/local5
+                  ^^^ ^^^^^^^^^^ ^^^^^^
+                 Host Date       Filename
+
+3. Edit config file
+   # vi LoggerConfig.pm
+
+4. Add your language and change the page style
+   # vi cgi/CGIConfig.pm
+
+5. Others
+   Net::POP3         => POP3 check
+   Unicode::IMAPUtf7 => decode IMAP mailbox name
